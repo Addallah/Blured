@@ -10,7 +10,7 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-struct BluredImage: View {
+public struct BluredImage: View {
 	 
 	 var image: String
 	 var contentMode: ContentMode
@@ -18,7 +18,7 @@ struct BluredImage: View {
 	 var startPoint: CGFloat
 	 var endPoint: CGFloat
 	 
-    var body: some View {
+	 public var body: some View {
 		  Image(image, bundle: .main)
 				.resizable()
 				.aspectRatio(contentMode: contentMode)
