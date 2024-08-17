@@ -18,6 +18,14 @@ public struct BluredImage: View {
 	 var startPoint: CGFloat
 	 var endPoint: CGFloat
 	 
+	 public init(image: String, contentMode: ContentMode, color: Color, startPoint: CGFloat, endPoint: CGFloat) {
+		  self.image = image
+		  self.contentMode = contentMode
+		  self.color = color
+		  self.startPoint = startPoint
+		  self.endPoint = endPoint
+	 }
+	 
 	 public var body: some View {
 		  Image(image, bundle: .main)
 				.resizable()
